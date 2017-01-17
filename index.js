@@ -16,4 +16,4 @@ http.createServer((req, res) => {
 	res.writeHead(200, { 'Content-Type': 'text/html' });
 	res.end(index);
 	console.log('Listening on port 8080...');
-}).listen(8080);
+}).listen(process.env.PORT || 8080);
